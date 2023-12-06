@@ -23,6 +23,9 @@ body {
 
 
 }
+html , body{
+    overflow-x: hidden;
+}
 .loader-wrapper {
     position: fixed;
     top: 0;
