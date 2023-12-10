@@ -1203,9 +1203,11 @@ text-transform: uppercase;
        }
        .counter {
         align-items: flex-start !important;
+        height: max-content !important;
     }
     .counter-item{
-        font-size: 22px !important;
+        font-size: 11px !important;
+        flex: 1;
     }
     .cards-container{
             padding-top: 27px !important;
