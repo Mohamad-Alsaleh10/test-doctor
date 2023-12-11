@@ -1152,8 +1152,11 @@ text-transform: uppercase;
 
 
 @media(max-width:768px){
+    .about-main{
+        padding-top: 85px !important;
+    }
     .title-sec{
-        font-size: 35px;
+        font-size: 28px;
     }
     .title-sec::before{
         height: 4px;
