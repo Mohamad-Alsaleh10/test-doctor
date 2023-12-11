@@ -1452,6 +1452,9 @@ border-radius: 50%;
         height: 60px;
        
         }   
+        .card .card-img{
+            font-size: 16px !important;
+        }
 }
 .card .card-img .person-container img{
 position: absolute;
