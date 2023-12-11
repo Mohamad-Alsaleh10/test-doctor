@@ -101,7 +101,7 @@ html , body{
 
 .youtupe-section{
     width: 100vw;
-    padding-top: 30px;
+    padding-top: 60px;
     display: flex;
     flex-direction: column;
     gap: 70px;
@@ -1115,6 +1115,13 @@ display: none;
    flex-direction: column;
    gap: 15px;
    }
+   @media(max-width:768px){
+   .service-overlay ul{
+        /* 59.8px */
+        font-size: 18px !important;
+       gap: 8px !important;
+       }
+   }
 .sevice-card-desc {
     display: flex;
     flex-direction: column;
@@ -1166,7 +1173,7 @@ text-transform: uppercase;
         padding: 15px;
     }
     .service-overlay ul{
-        padding: 9px 1px 1px 38px;
+        padding-top: 20px;
         /* margin: 0; */
         line-height: 1.3;
         font-size: 18px;
