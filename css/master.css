@@ -1409,7 +1409,7 @@ gap: 15px;
     /* width: 90%; */
 }
 .card{
-    width: 70%;
+    width: 79%;
     display: flex;
     justify-content: space-around;
     position: absolute;
@@ -1445,6 +1445,14 @@ width: 80px;
 height: 80px;
 border-radius: 50%;
 }
+@media(max-width:768px){
+    .card .card-img .person-container{
+       
+        width: 60px;
+        height: 60px;
+       
+        }   
+}
 .card .card-img .person-container img{
 position: absolute;
 top: 0;
@@ -1473,7 +1481,7 @@ flex: 4;
         
     }
     .card{
-        height: 180px;
+        height: 149px;
     }
     .swiper-container{
         height: 262px;
