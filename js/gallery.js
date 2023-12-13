@@ -64,6 +64,7 @@ function updateUI() {
     var uuu = document.querySelector(".uuu");
     var ddd = document.querySelector(".ddd");
     var titleUrinary = document.querySelector(".title-Urinary");
+    var mobilelist = document.querySelector('.list-container ul');
     if (!isEnglish) {
         // تغيير المحاذاة للغة العربية
         if (nav) nav.style.flexDirection = 'row-reverse';
@@ -126,6 +127,8 @@ function updateUI() {
         if(retyt) retyt.style.textAlign="right";
         if(uuu) uuu.style.textAlign="right";
         if(ddd) ddd.style.textAlign="right";
+        if(mobilelist) mobilelist.style.textAlign='right';
+        
 
 
 
@@ -192,6 +195,8 @@ function updateUI() {
         if(retyt) retyt.style.textAlign="left";
         if(uuu) uuu.style.textAlign="left";
         if(ddd) ddd.style.textAlign="left";
+        if(mobilelist) mobilelist.style.textAlign='left';
+
 
 
 
@@ -216,6 +221,12 @@ function updateUI() {
     document.querySelectorAll('footer ul li a')[1].innerHTML=languageData.services;
     document.querySelectorAll('footer ul li a')[2].innerHTML=languageData.gallery;
     document.querySelectorAll('footer ul li a')[3].innerHTML = languageData.blog;
+
+    document.querySelectorAll('.list-container ul li a')[0].innerHTML=languageData.home;
+    document.querySelectorAll('.list-container ul li a')[1].innerHTML=languageData.services;
+    document.querySelectorAll('.list-container ul li a')[2].innerHTML=languageData.gallery;
+    document.querySelectorAll('.list-container ul li a')[3].innerHTML = languageData.blog;
+
     document.querySelector('.subscription span').innerHTML = languageData.subscribe;
     document.querySelector('.subscribe-btn').innerHTML=languageData.subscribeBtn;
     document.querySelectorAll('.gallery-container .gallery-item a').forEach(function(a) {

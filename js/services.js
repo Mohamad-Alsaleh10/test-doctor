@@ -24,7 +24,7 @@ function updateUI() {
     var rightListItems = document.querySelectorAll('.right-list li');
     var leftListItemsContainer = document.querySelector('.left-list');
     var rightListItemsContainer = document.querySelector('.right-list');
-
+    var mobilelist = document.querySelector('.list-container ul');
     if (!isEnglish) {
         // تغيير المحاذاة للغة العربية
         if (nav) nav.style.flexDirection = 'row-reverse';
@@ -36,6 +36,7 @@ function updateUI() {
         if (counter) counter.style.flexDirection = 'row-reverse';
         if (leftListItemsContainer) leftListItemsContainer.style.direction= 'rtl';
         if (rightListItemsContainer) rightListItemsContainer.style.direction= 'rtl';
+        if(mobilelist) mobilelist.style.textAlign='right';
 
 
     } else {
@@ -49,6 +50,7 @@ function updateUI() {
         if (counter) counter.style.flexDirection = 'row';
         if (leftListItemsContainer) leftListItemsContainer.style.direction= 'ltr';
         if (rightListItemsContainer) rightListItemsContainer.style.direction= 'ltr';
+        if(mobilelist) mobilelist.style.textAlign='left';
 
 
 
@@ -67,6 +69,10 @@ function updateUI() {
     document.querySelectorAll('footer ul li a')[1].innerHTML=languageData.services;
     document.querySelectorAll('footer ul li a')[2].innerHTML=languageData.gallery;
     document.querySelectorAll('footer ul li a')[3].innerHTML = languageData.blog;
+    document.querySelectorAll('.list-container ul li a')[0].innerHTML=languageData.home;
+    document.querySelectorAll('.list-container ul li a')[1].innerHTML=languageData.services;
+    document.querySelectorAll('.list-container ul li a')[2].innerHTML=languageData.gallery;
+    document.querySelectorAll('.list-container ul li a')[3].innerHTML = languageData.blog;
     document.querySelector('.subscription span').innerHTML = languageData.subscribe;
     document.querySelector('.subscribe-btn').innerHTML=languageData.subscribeBtn;
     document.querySelectorAll('.gallery-container .gallery-item a').forEach(function(a) {

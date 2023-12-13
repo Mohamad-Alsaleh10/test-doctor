@@ -20,6 +20,7 @@ function updateUI() {
     var footerlist = document.querySelector('footer ul');
     var about = document.querySelector('.about-main ul');
     var counter = document.querySelector('.counter');
+    var mobilelist = document.querySelector('.list-container ul');
     if (!isEnglish) {
         // تغيير المحاذاة للغة العربية
         if (nav) nav.style.flexDirection = 'row-reverse';
@@ -29,6 +30,7 @@ function updateUI() {
         if (footerlist) footerlist.style.flexDirection = 'row-reverse';
         if (about) about.style.direction = 'rtl';
         if (counter) counter.style.flexDirection = 'row-reverse';
+        if(mobilelist) mobilelist.style.textAlign='right';
 
         // for(i=0 ; i<serviceUl.length ; i++){
         //     serviceUl[i].style.direction='rtl';
@@ -44,6 +46,7 @@ function updateUI() {
         if (footerlist) footerlist.style.flexDirection = 'row';
         if (about) about.style.direction = 'ltr';
         if (counter) counter.style.flexDirection = 'row';
+        if(mobilelist) mobilelist.style.textAlign='left';
         
         // for(i=0 ; i<serviceUl.length ; i++){
         //     serviceUl[i].style.direction='ltr';
@@ -68,6 +71,10 @@ function updateUI() {
     document.querySelectorAll('footer ul li a')[1].innerHTML=languageData.services;
     document.querySelectorAll('footer ul li a')[2].innerHTML=languageData.gallery;
     document.querySelectorAll('footer ul li a')[3].innerHTML = languageData.blog;
+    document.querySelectorAll('.list-container ul li a')[0].innerHTML=languageData.home;
+    document.querySelectorAll('.list-container ul li a')[1].innerHTML=languageData.services;
+    document.querySelectorAll('.list-container ul li a')[2].innerHTML=languageData.gallery;
+    document.querySelectorAll('.list-container ul li a')[3].innerHTML = languageData.blog;
     document.querySelector('.subscription span').innerHTML = languageData.subscribe;
     document.querySelector('.subscribe-btn').innerHTML=languageData.subscribeBtn;
     document.querySelector('.name-main').innerHTML=languageData.namemain;

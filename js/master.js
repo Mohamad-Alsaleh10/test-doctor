@@ -21,7 +21,7 @@ function updateUI() {
     var about = document.querySelector('.about-main ul');
     var counter = document.querySelector('.counter');
     var serviceUl=document.querySelectorAll('.services-container .service-card .service-overlay ul');
-
+    var appointmentform = document.querySelector('#form-container #appointment-form');
     
 
     if (!isEnglish) {
@@ -34,6 +34,10 @@ function updateUI() {
         if (about) about.style.direction = 'rtl';
         if (counter) counter.style.flexDirection = 'row-reverse';
         for(i=0 ; i<serviceUl.length ; i++){serviceUl[i].style.direction='rtl'};
+        if(appointmentform) appointmentform.style.textAlign='right';
+        if(appointmentform) appointmentform.style.direction='rtl';
+
+
         
 
 
@@ -49,7 +53,8 @@ function updateUI() {
         if (about) about.style.direction = 'ltr';
         if (counter) counter.style.flexDirection = 'row';
         for(i=0 ; i<serviceUl.length ; i++){serviceUl[i].style.direction='ltr'};
-
+        if(appointmentform) appointmentform.style.textAlign='left';
+        if(appointmentform) appointmentform.style.direction='ltr ';
 
 
 
