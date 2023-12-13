@@ -2327,6 +2327,7 @@ color: #000;
 @media(max-width:768px){
     .main-service-page{
         flex-direction: column;
+            padding-top: 60px;
     }
     
 .main-header{
