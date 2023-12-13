@@ -21,6 +21,9 @@ function updateUI() {
     var about = document.querySelector('.about-main ul');
     var counter = document.querySelector('.counter');
     var mobilelist = document.querySelector('.list-container ul');
+    var appointmentform = document.querySelector('#form-container #appointment-form');
+    var appointmentformLabels = document.querySelectorAll('#form-container #appointment-form label');
+
     if (!isEnglish) {
         // تغيير المحاذاة للغة العربية
         if (nav) nav.style.flexDirection = 'row-reverse';
@@ -31,6 +34,8 @@ function updateUI() {
         if (about) about.style.direction = 'rtl';
         if (counter) counter.style.flexDirection = 'row-reverse';
         if(mobilelist) mobilelist.style.textAlign='right';
+        if(appointmentform) appointmentform.style.textAlign='right';
+        if(appointmentform) appointmentform.style.direction='rtl';
 
         // for(i=0 ; i<serviceUl.length ; i++){
         //     serviceUl[i].style.direction='rtl';
@@ -47,6 +52,8 @@ function updateUI() {
         if (about) about.style.direction = 'ltr';
         if (counter) counter.style.flexDirection = 'row';
         if(mobilelist) mobilelist.style.textAlign='left';
+        if(appointmentform) appointmentform.style.textAlign='left';
+        if(appointmentform) appointmentform.style.direction='ltr';
         
         // for(i=0 ; i<serviceUl.length ; i++){
         //     serviceUl[i].style.direction='ltr';
@@ -98,6 +105,16 @@ function updateUI() {
      document.querySelectorAll('.counter-item span:nth-child(2)')[2].innerHTML=languageData.Patients
      ;
      document.querySelector('.review-btn').innerHTML=languageData.ReviewBtn;
+     appointmentformLabels[0].innerHTML=languageData.Yourname;
+     appointmentformLabels[1].innerHTML=languageData.Yourmail;
+     appointmentformLabels[2].innerHTML=languageData.Yourphone;
+     appointmentformLabels[3].innerHTML=languageData.Yourdate;
+     appointmentformLabels[4].innerHTML=languageData.Yourmessage;
+     document.querySelector('#submitForm').innerHTML=languageData.subbtn;
+     document.querySelector('#cancelForm').innerHTML=languageData.cancelbtn;
+
+
+
 
 }
 

@@ -84,7 +84,15 @@
     "LastTrans1" : "Dr Horan said: “Cancer is a disease in which cells in the body grow out of control. When cancer starts in the prostate, it is called prostate cancer ",
     "gallItempTrans" : " Nice city and lovely training in Milano, Italy. We enjoyed interesting lectures and practical training in Milan, I taly, at the annual conference of the European Urology Society.",
     "specialP" : "I was honored to conduct a health talk about #prostatecancer organized by NMC Royal Hospital Sharjah at Fidelity United company in the grate building of The Opus By Omniyat  designed by Zaha Hadid Architects  ",
-    "blogcontentbtn" : "Read More"
+    "blogcontentbtn" : "Read More",
+    "Yourname":"Name",
+    "Yourmail":" Email : ",
+    "Yourphone":" Phone : ",
+    "Yourdate":" Date and Time : ",
+    "Yourmessage":"Message : ",
+    "cancelbtn":"Cancel",
+    "subbtn":"Submit"
+
 
 
 
